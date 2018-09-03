@@ -31,7 +31,7 @@ def _extract_color(hex_list):
     r,g,b =tuple(hex_list[i:i+2] 
             for i in range(0, 2*3, 2))
 
-    return f'#{r}{g}{b}'
+    return '#%s%s%s' % (r, g, b)
 
 def _set_pixels(flatten_grid):
     # len(list) should be a squared of integer value
